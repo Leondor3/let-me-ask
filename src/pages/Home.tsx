@@ -49,15 +49,15 @@ export function Home() {
 
   return (
     <div id="page-auth">
-      <aside>
-        <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
-        <strong>Crie sua sala e faça sua pergunta&amp;A ao-vivo</strong>
-        <p>Tire sua dúvidas da sua audiciente em tempo-real</p>
-      </aside>
+      
       <main>
         
         <div className="main-content">
-          <img src={LogoImg} alt="letmeask" />
+        <img src={user?.avatar} alt={user?.name} />
+          <h1>Welcome the let me ask <br></br><br></br>
+          {user?.name}
+          </h1>
+          
           <button onClick={handleCreateRoom} className="create-room">
             <img src={googleIconImg} alt="Logo do google" />
             Crie sua sala com o Google

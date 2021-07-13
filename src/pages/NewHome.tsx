@@ -38,15 +38,13 @@ export function NewHome() {
 
   return (
     <div id="page-auth">
-      <aside>
-        <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
-        <strong>Crie salas de Q&amp;A ao-vivo</strong>
-        <p>Tire sua dúvidas da sua audiciente em tempo-real</p>
-      </aside>
+    
       <main>
         
         <div className="main-content">
-          <img src={logoImg} alt="letmeask" />
+        <img src={user?.avatar} alt={user?.name} />
+        <h1>Welcome, {user?.name}
+          </h1>
           <h2>Criar uma nova sala</h2>
             <form onSubmit={handleCreateRoom}>
               <input 
