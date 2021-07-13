@@ -55,14 +55,6 @@ export function AdminRoom() {
         })
     }
 
-    async function handleSendAnswer(questionId:string) {
-        await database.ref(`rooms/${roomId}/answer/${questionId}`).update({
-            isHighLighted: true,
-        })
-    }
-
-    
-
 
     return (
         <div id="page-room">
